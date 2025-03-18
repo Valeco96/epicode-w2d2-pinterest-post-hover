@@ -3,7 +3,7 @@
   width: 450px;
   height: 600px;
   border-radius: 30px;
-  /*overflow: hidden;*/
+  overflow: hidden;
   position: relative;
   box-sizing: 0, 0, 10px black;
   transition: box-shadow 1.5s linear;
@@ -47,6 +47,11 @@
   padding: 20px 28px;
   border-radius: 34px;
   text-decoration: none;
+  transition: transform 0.5s;
+}
+
+.card:hover #btn-save {
+  transform: translateX(-180px);
 }
 
 #links {
@@ -60,9 +65,9 @@
   transition: transform 0.5s;
 }
 
-#links:hover {
-  bottom: 0px;
-  transform: translate(-60px);
+.card:hover #links {
+  bottom: -10px;
+  transform: translateY(-60px);
 }
 
 #link-garden {
