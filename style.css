@@ -60,10 +60,12 @@
   border-radius: 50%;
   background-color: whitesmoke;
   margin: 0 30px;
+  opacity: 0.8;
 }
 
 #icon-2 {
   padding: 10px 15px;
   border-radius: 50%;
   background-color: whitesmoke;
+  opacity: 0.8;
 }
