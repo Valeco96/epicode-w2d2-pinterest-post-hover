@@ -3,8 +3,10 @@
   width: 450px;
   height: 600px;
   border-radius: 30px;
-  overflow: hidden;
+  /*overflow: hidden;*/
   position: relative;
+  box-sizing: 0, 0, 10px black;
+  transition: box-shadow 1.5s linear;
 }
 
 .card img {
@@ -19,8 +21,13 @@
   margin: auto;
 }
 
+.card:hover {
+  box-shadow: 0, 0, 30px, black;
+}
+
 .card img:hover {
   filter: brightness(0.5);
+  border-radius: 30px;
 }
 
 .btn-links {
@@ -29,8 +36,11 @@
 }
 
 #btn-save {
-  top: 20px;
-  right: 30px;
+  top: 40px;
+  right: -120px;
+}
+
+#btn-save a {
   background-color: #e63021;
   color: white;
   font-size: 24px;
@@ -40,19 +50,30 @@
 }
 
 #links {
-  bottom: 25px;
+  position: absolute;
+  bottom: -50px;
   left: 35px;
   display: flex;
   justify-content: center;
   font-size: 22px;
-  color: black;
   border-radius: 34px;
+  transition: transform 0.5s;
 }
 
-#link {
+#links:hover {
+  bottom: 0px;
+  transform: translate(-60px);
+}
+
+#link-garden {
   padding: 12px 28px;
   border-radius: 34px;
   background-color: whitesmoke;
+}
+
+#link {
+  text-decoration: none;
+  color: black;
 }
 
 #icon-1 {
